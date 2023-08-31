@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="build/img/logo.svg" alt="Logotipo de bienes raices">
+                </a>
+                <div class="mobile-menu">
+                    <img src="build/img/barras.svg" alt="Icono menu responsive">
+                </div>
+               <div class="derecha">
+                <img src="build/img/dark-mode.svg" alt="" class="dark-mode-btn">
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+               </div>
+                
+            </div><!--.barra-->
+            
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <h1>Contacto</h1>
+
+        <picture>
+            <source srcset="build/img/destacada3.webp" type="image/webp">
+            <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+            <img src="build/img/destacada3.jpg" alt="imagen Contacto" loading="lazy">
+        </picture>
+
+        <h2>Llene el formulario de contactos</h2>
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Información personal</legend>
+                <label for="nombre">nombre</label>
+                <input type="text" placeholder="tu nombre" id="nombre">
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Tu Email" id="email">
+
+                
+                <label for="telefono">Telefono</label>
+                <input type="tel" placeholder="Tu telefono" id="telefono">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre las propiedades</legend>
+
+                <label for="opciones">Vende o Compra:</label>
+                <select name="" id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="compra" >Compra</option>
+                    <option value="vende" >Vende</option>
+
+                </select>
+
+                <label for="presupuesto">Precio o Presupuesto</label>
+                <input type="number" placeholder="Tu precio o presupuesto" id="presupuesto">
+            </fieldset>
+
+            <fieldset>
+                <legend></legend>
+                <p>Como desea ser contactado</p>
+                <div class="forma-contacto">
+                    <label for="contactar-telefono">Teléfono</label>
+                    <input type="radio" name="contacto" value="telefono" id="contactar-telefono">
+
+                    <label for="contactar-email">E-mail</label>
+                    <input type="radio" name="contacto" value="email" id="contactar-email">
+                </div>
+
+                <p>Si eligio el teléfono, elija la hora y la fecha</p>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time"  id="hora" min="09:00" max="18:00">
+            </fieldset>
+
+
+            <input type="submit" name="" class="boton-verde" value="enviar">
+        </form>
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <p class="copyright">Todos los derechos reservados</p>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

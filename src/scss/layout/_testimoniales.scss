@@ -1,0 +1,47 @@
+.testimonial{
+    background-color: $verde;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: $blanco;
+    position: relative;
+    border-radius: 2rem;
+    animation: movimiento 3s ease-in-out infinite;
+
+
+    blockquote{
+        
+        padding-left: 5rem;
+    
+
+
+        &::before{
+            content: '';
+            background-image: url(../img/comilla.svg);
+            background-repeat: no-repeat;
+            width: 6rem;
+            height: 8rem;
+            display: block;
+            position: absolute;
+            left: 4rem;
+            top: 4rem;
+           
+    
+        }
+    }
+    p{
+        text-align: right;
+        color: $blanco;
+    }
+   
+}
+@keyframes movimiento{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
