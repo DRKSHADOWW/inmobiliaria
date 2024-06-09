@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/index.php"
+sttus = 200
