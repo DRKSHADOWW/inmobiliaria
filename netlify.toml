@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "/index.php"
+to = "/index.html"
 sttus = 200
